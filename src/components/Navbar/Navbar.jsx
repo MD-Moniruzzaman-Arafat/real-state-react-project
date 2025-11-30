@@ -1,4 +1,7 @@
+import useAuth from '../../hooks/useAuth';
+
 export default function Navbar() {
+  const { user } = useAuth();
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -79,7 +82,11 @@ export default function Navbar() {
               <div className="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  src={
+                    user.photoURL
+                      ? user.photoURL
+                      : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                  }
                 />
               </div>
             </div>
@@ -90,15 +97,12 @@ export default function Navbar() {
               <li>
                 <a className="justify-between">
                   Profile
-                  <span className="badge">New</span>
+                  <span className="badge">
+                    {user.displayName.split(' ')[2]}
+                  </span>
                 </a>
               </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
+              <li>{user.email ? <span>Logout</span> : <span>Login</span>}</li>
             </ul>
           </div>
         </div>
