@@ -3,6 +3,7 @@ import App from '../App';
 import Login from '../components/Login/Login';
 import Register from '../components/Register/Register';
 import Home from '../page/Home';
+import { fetchData } from '../utility';
 
 export const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        loader: fetchData,
       },
     ],
   },

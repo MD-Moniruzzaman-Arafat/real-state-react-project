@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Luxury Single-Family Home",
+    "segment_name": "Residential",
+    "description": "This stunning 4-bedroom luxury single-family home offers an open-concept layout with a state-of-the-art kitchen, granite countertops, and custom cabinetry. The property features a beautifully landscaped garden, a private swimming pool, and a spacious garage. Perfect for families seeking both elegance and comfort, it is located in a peaceful suburban neighborhood with top-rated schools nearby.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Greenwood, California",
+    "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Garage"],
+    "image": "https://i.ibb.co.com/GmB4Kzm/beautiful-shot-white-building-hamilton-gardens-new-zealand-blue-sky.jpg"
+  },
+  {
+    "id": 2,
+    "estate_title": "Modern Townhouse",
+    "segment_name": "Residential",
+    "description": "A contemporary 3-bedroom townhouse designed with clean lines, large windows, and a rooftop terrace offering panoramic city views. The property includes a spacious living area, modern kitchen with stainless steel appliances, and an attached parking space. Situated in a vibrant neighborhood, it provides easy access to shops, cafes, and public transport.",
+    "price": "$320,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "Brooklyn, New York",
+    "facilities": ["Living Room", "Kitchen", "Balcony", "Parking Space"],
+    "image": "https://i.ibb.co.com/MDnmtYC8/family-together-son-visiting-his-parents-talking-them.jpg"
+  },
+  {
+    "id": 3,
+    "estate_title": "City View Apartment",
+    "segment_name": "Residential",
+    "description": "This 2-bedroom apartment combines style and convenience, featuring floor-to-ceiling windows that fill the space with natural light and offer sweeping city skyline views. Equipped with high-end finishes, a fully fitted kitchen, and access to building amenities such as a gym and lounge, it’s perfect for professionals seeking a modern urban lifestyle.",
+    "price": "$1,800/month",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Downtown, Chicago",
+    "facilities": ["Living Room", "Kitchen", "Gym", "Elevator Access"],
+    "image": "https://i.ibb.co.com/8n3KvdHL/luxury-holiday-home.jpg"
+  },
+  {
+    "id": 4,
+    "estate_title": "Student Housing Unit",
+    "segment_name": "Residential",
+    "description": "Affordable and fully furnished student housing located just minutes away from the university campus. This shared unit features individual bedrooms, a communal study lounge, high-speed internet, and laundry facilities. Designed for comfort and productivity, it fosters a welcoming student community with regular social events.",
+    "price": "$500/month",
+    "status": "rent",
+    "area": "600 sq ft",
+    "location": "Cambridge, Massachusetts",
+    "facilities": ["Study Room", "Shared Kitchen", "WiFi", "Laundry"],
+    "image": "https://i.ibb.co.com/cjvSkjB/modern-spacious-room-with-large-panoramic-window.jpg"
+  },
+  {
+    "id": 5,
+    "estate_title": "Senior Living Community Suite",
+    "segment_name": "Residential",
+    "description": "A thoughtfully designed senior living suite that prioritizes comfort, safety, and social interaction. Residents enjoy landscaped gardens, a private kitchenette, and access to on-site healthcare services. Daily recreational activities, fitness programs, and 24/7 support ensure a vibrant and secure living environment for retirees.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "800 sq ft",
+    "location": "Orlando, Florida",
+    "facilities": [
+      "Living Room",
+      "Kitchenette",
+      "Garden",
+      "Medical Assistance"
+    ],
+    "image": "https://i.ibb.co.com/dy4WhQn/modern-tokyo-street-background.jpg"
+  },
+  {
+    "id": 6,
+    "estate_title": "Beachfront Vacation Villa",
+    "segment_name": "Residential",
+    "description": "An exquisite 5-bedroom beachfront villa boasting an infinity pool, direct beach access, and breathtaking ocean views from every room. The interior is elegantly furnished with a blend of modern luxury and coastal charm. Ideal for family vacations or group getaways, this property offers privacy, comfort, and unforgettable seaside experiences.",
+    "price": "$900/night",
+    "status": "rent",
+    "area": "4000 sq ft",
+    "location": "Malibu, California",
+    "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Private Beach"],
+    "image": "https://i.ibb.co.com/1J8ZXCsX/photorealistic-timber-house-interior-with-wooden-decor-furnishings.jpg"
+  },
+  {
+    "id": 7,
+    "estate_title": "Cozy Mountain Cabin",
+    "segment_name": "Residential",
+    "description": "A charming wooden cabin nestled in the mountains, offering rustic charm with modern comforts. The property includes a stone fireplace, wraparound balcony, and stunning views of the surrounding nature. Located near hiking trails and ski resorts, it’s a perfect getaway for outdoor enthusiasts year-round.",
+    "price": "$750/night",
+    "status": "rent",
+    "area": "1500 sq ft",
+    "location": "Aspen, Colorado",
+    "facilities": ["Living Room", "Kitchen", "Fireplace", "Balcony"],
+    "image": "https://i.ibb.co.com/HRS7Qs5/road-city.jpg"
+  },
+  {
+    "id": 8,
+    "estate_title": "Penthouse Suite",
+    "segment_name": "Residential",
+    "description": "An ultra-luxurious 3-bedroom penthouse offering expansive living space, a private rooftop terrace, and unobstructed skyline views. Features include a chef’s kitchen, spa-inspired bathrooms, and premium smart home technology. Located in the heart of the city, this property provides the ultimate in upscale living.",
+    "price": "$2,500,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": "Manhattan, New York",
+    "facilities": [
+      "Living Room",
+      "Swimming Pool",
+      "Kitchen",
+      "Rooftop Terrace"
+    ],
+    "image": "https://i.ibb.co.com/fYKb8qqz/row-houses-bristol-england.jpg"
+  },
+  {
+    "id": 9,
+    "estate_title": "Suburban Duplex",
+    "segment_name": "Residential",
+    "description": "A spacious and well-maintained duplex located in a family-friendly suburban community. The property features two independent living units, each with a private yard, garage, and modern kitchen. Surrounded by parks, schools, and shopping centers, it’s an excellent choice for both investment and personal use.",
+    "price": "$280,000",
+    "status": "sale",
+    "area": "2100 sq ft",
+    "location": "Austin, Texas",
+    "facilities": ["Living Room", "Kitchen", "Garage", "Backyard"],
+    "image": "https://i.ibb.co.com/LXz18kN4/traveler-asian-backpacker-couple-feeling-happy-traveling-beijing-china.jpg"
+  }
+]
