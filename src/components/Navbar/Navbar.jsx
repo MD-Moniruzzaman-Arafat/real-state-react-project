@@ -1,7 +1,17 @@
+import { Link } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 export default function Navbar() {
-  const { user } = useAuth();
+  const { user, logoutUser } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logoutUser();
+      // Optionally, you can add any additional logic after logout
+    } catch (error) {
+      console.error('Logout failed:', error);
+    }
+  };
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -83,8 +93,8 @@ export default function Navbar() {
                 <img
                   alt="Tailwind CSS Navbar component"
                   src={
-                    user.photoURL
-                      ? user.photoURL
+                    user?.photoURL
+                      ? user?.photoURL
                       : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
                   }
                 />
@@ -98,11 +108,17 @@ export default function Navbar() {
                 <a className="justify-between">
                   Profile
                   <span className="badge">
-                    {user.displayName.split(' ')[2]}
+                    {user?.displayName.split(' ')[2]}
                   </span>
                 </a>
               </li>
-              <li>{user.email ? <span>Logout</span> : <span>Login</span>}</li>
+              <li>
+                {user?.email ? (
+                  <span onClick={handleLogout}>Logout</span>
+                ) : (
+                  <Link to="/login">Login</Link>
+                )}
+              </li>
             </ul>
           </div>
         </div>
