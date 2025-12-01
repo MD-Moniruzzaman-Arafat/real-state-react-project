@@ -1,5 +1,6 @@
 import { useLoaderData } from 'react-router';
 import Banner from '../components/Banner/Banner';
+import FeaturedProperties from '../components/FeaturedProperties/FeaturedProperties';
 import useAuth from '../hooks/useAuth';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div className="container mx-auto">
       <Banner data={data} />
+      <FeaturedProperties data={data} />
     </div>
   );
 }
