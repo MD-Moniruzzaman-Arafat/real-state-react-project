@@ -2,6 +2,7 @@ import { AiOutlineAreaChart } from 'react-icons/ai';
 import { IoIosPricetag } from 'react-icons/io';
 import { MdLocationPin } from 'react-icons/md';
 import { RiShoppingBag3Fill } from 'react-icons/ri';
+import { Link } from 'react-router';
 
 export default function Card({ item }) {
   return (
@@ -31,7 +32,9 @@ export default function Card({ item }) {
             </div>
           </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Details</button>
+            <Link to={`/details/${item.id}`} className="btn btn-primary">
+              Details
+            </Link>
           </div>
         </div>
       </div>

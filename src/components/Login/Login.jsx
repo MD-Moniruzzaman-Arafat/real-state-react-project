@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 export default function Login() {
@@ -9,6 +9,8 @@ export default function Login() {
     password: '',
   });
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +24,7 @@ export default function Login() {
     try {
       const res = await loginUser(formData.email, formData.password);
       if (res.user) {
-        navigate('/');
+        navigate(`${location.state ? location.state : '/'}`);
       }
     } catch (error) {
       console.error('Error logging in user:', error);
@@ -34,7 +36,9 @@ export default function Login() {
     try {
       const res = await signInWithGoogle();
       console.log(res);
-      navigate('/');
+      if (res.user) {
+        navigate(`${location.state ? location.state : '/'}`);
+      }
     } catch (error) {
       console.error('Error logging in with Google:', error);
     }
