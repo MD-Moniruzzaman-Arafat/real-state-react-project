@@ -1,5 +1,6 @@
 import { useLoaderData } from 'react-router';
 import Card from '../Card/Card';
+import Loder from '../Loader/Loder';
 
 export default function FeaturedProperties() {
   const data = useLoaderData();
@@ -11,9 +12,11 @@ export default function FeaturedProperties() {
           Featured Properties
         </h1>
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {data?.map((item) => (
-            <Card key={item.id} item={item} />
-          ))}
+          {data ? (
+            data?.map((item) => <Card key={item.id} item={item} />)
+          ) : (
+            <Loder />
+          )}
         </div>
       </div>
     </>
